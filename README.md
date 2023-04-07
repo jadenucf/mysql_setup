@@ -31,7 +31,7 @@ Now click OK.
 Look on the left and click on the schemas section of the navigator.
 
 Right click on the Schema sidebar and press Create Schema. (A schema is a database)
-Name your schema lab10 and then press apply.
+Name your schema whatever is in the config/db-config.js file and then press apply.
 
 nice now you have your database.
 
@@ -39,15 +39,14 @@ nice now you have your database.
 
 **IMPORTANT: If you want to import JSON to your database, make sure that your JSON file is formatted exactly like the JSON file in this repo's data folder.**
 
-Right click on your database (lab10) and press Table Data Import Wizard
+Right click on your database and press Table Data Import Wizard
 
 Enter your file path and make sure it is searching for JSON instead of CSV
-Before you click create new table make sure the table is named posts.
+Before you click create new table make sure the table is named whatever is in the config/db-config.js file.
 Now click next until the pop up is gone.
 
 
 ## Steps to start your live server  
-Look inside the index.js file and replace your TABLE_NAME variable with your respective table name.
 
 Run these commands in your terminal:
 1. npm install i
