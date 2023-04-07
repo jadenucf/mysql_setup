@@ -1,13 +1,12 @@
 # jaden's how to guide (mysql edition)
 
 This is guide will be a little more tricky than the mongoDB guide because of the nature of mySQL and their GUI mySQL Workbench. 
-I based the tutorial off a specific video so if you are confused on why you must follow these steps exactly watch it: https://www.youtube.com/watch?v=kphq2TsVRIs&ab_channel=DatabaseStar
+I based the tutorial off a specific video so if you are confused watch it: https://www.youtube.com/watch?v=kphq2TsVRIs&ab_channel=DatabaseStar
 
 
 ## Prequisites  
 Download mySQL, mySQL Workbench and run a mySQL image on Docker Desktop
 
-EXAMPLE:
 ```
 docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
 ```
@@ -22,12 +21,14 @@ When connecting to mySQL Workbench make sure all of your config credentials matc
 -Name the connection name anything you want.
 -Make sure the port is the first four digits of your container port (ex: 3306)
 -Make sure you enter root as your username
--Make sure your password is the as your password.
+-Make sure your password is the SQL password. (ex: password)
 
 Click test connection to make sure everything is set up and if not. 
 Now click OK.
 
 ### Creating your mySQL Database
+
+Look on the left and click on the schemas section of the navigator.
 
 Right click on the Schema sidebar and press Create Schema. (A schema is a database)
 Name your schema lab10 and then press apply.
