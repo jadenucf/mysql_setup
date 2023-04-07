@@ -14,9 +14,6 @@ Once you see the mySQL container in Docker Desktop make sure its running. If its
 
 
 ## Steps to start your live server  
-Inside MongoDB compass make sure your connection is mongodb://localhost:37017.
-Then create a database and collection for your json objects. 
-
 Look inside the index.js file and replace your TABLE_NAME variable with your respective table name.
 
 Run these commands in your terminal:
