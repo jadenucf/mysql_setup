@@ -17,7 +17,6 @@ app.use('/static', express.static(path.join(import.meta.url, 'public')));
   await db.sequelize.sync();
 })();
 
-const TABLE_NAME = 'posts'
 
 const connection = await mysql.createConnection({
   host: dbConfig.HOST,

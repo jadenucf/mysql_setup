@@ -5,9 +5,11 @@ I based the tutorial off a specific video so if you are confused on why you must
 
 
 ## Prequisites  
-Download mySQL, mySQL Workbench and run this exact mySQL image on Docker Desktop:
+Download mySQL, mySQL Workbench and run a mySQL image on Docker Desktop
+
+Remove the <tags> with your config credentials:
 ```
-docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
+docker run --name <ENTER_NAME> -p <ENTER_PORT>:3306 -e MYSQL_ROOT_PASSWORD=<ENTER_PASSWORD> -d mysql
 ```
 
 Once you see the mySQL container in Docker Desktop make sure its running. If its not, click the start button. 
@@ -16,11 +18,11 @@ Once you see the mySQL container in Docker Desktop make sure its running. If its
 
 In mySQL WorkBench create a new connection by clicking the plus sign.
 
-Set up
+When connecting to mySQL Workbench make sure all of your config credentials match up.
 -Name the connection name anything you want.
--Make sure the hostname is 127.0.0.1 and the port is 3306
+-Make sure the port is the first four digits of your container port (ex: 3306)
 -Make sure you enter root as your username
--Make sure you enter password as your password.
+-Make sure your password is the as your password.
 
 Click test connection to make sure everything is set up and if not. 
 Now click OK.
