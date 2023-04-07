@@ -35,7 +35,7 @@ nice now you have your database.
 
 ### Importing JSON to your mySQL Database
 
-**IMPORTANT: If you want to import JSON to your database, make sure that your JSON file is formatted exactly like the JSON file in the data folder.**
+**IMPORTANT: If you want to import JSON to your database, make sure that your JSON file is formatted exactly like the JSON file in this repo's data folder.**
 
 Right click on your database (lab10) and press Table Data Import Wizard
 
