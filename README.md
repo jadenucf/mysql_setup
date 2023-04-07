@@ -7,9 +7,9 @@ I based the tutorial off a specific video so if you are confused on why you must
 ## Prequisites  
 Download mySQL, mySQL Workbench and run a mySQL image on Docker Desktop
 
-Remove the <tags> with your config credentials:
+EXAMPLE:
 ```
-docker run --name <ENTER_NAME> -p <ENTER_PORT>:3306 -e MYSQL_ROOT_PASSWORD=<ENTER_PASSWORD> -d mysql
+docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
 ```
 
 Once you see the mySQL container in Docker Desktop make sure its running. If its not, click the start button. 
