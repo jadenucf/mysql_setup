@@ -1,8 +1,8 @@
 import { DataTypes } from 'sequelize';
-
+import dbConfig from '../config/db-config';
 const post = (sequelize) => {
   const Post = sequelize.define(
-    'posts',
+    `${dbConfig.TABLE_NAME}`,
     {
       title: {
         type: DataTypes.STRING,

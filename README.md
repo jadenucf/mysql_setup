@@ -5,8 +5,7 @@ I based the tutorial off a specific video so if you are confused on why you must
 
 
 ## Prequisites  
-Download mySQL Workbench and run this exact mySQL image on Docker Desktop:
-
+Download mySQL, mySQL Workbench and run this exact mySQL image on Docker Desktop:
 ```
 docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
 ```

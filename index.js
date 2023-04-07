@@ -31,7 +31,7 @@ const connection = await mysql.createConnection({
 // GET route to retrieve data from the database
 app.get('/posts', async (req, res) => {
   try {
-    const [rows] = await connection.execute(`SELECT * FROM ${TABLE_NAME}`);
+    const [rows] = await connection.execute(`SELECT * FROM ${dbConfig.TABLE_NAME}`);
     res.send(rows);
   } catch (error) {
     console.error(error);

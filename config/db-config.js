@@ -3,5 +3,6 @@ export default {
   USER: 'root',
   PASSWORD: 'password',
   DATABASE: 'lab10',
+  TABLE_NAME: 'posts',
   DIALECT: 'mysql'
 }
